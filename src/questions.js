@@ -203,7 +203,7 @@ const questions = [
       'Ninguna de las anteriores',
     ],
     sort: sortAlwaysEnd('Ninguna de las anteriores'),
-  }
+  },
 ]
 
 module.exports = questions
