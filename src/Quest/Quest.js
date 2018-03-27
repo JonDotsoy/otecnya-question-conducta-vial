@@ -101,6 +101,10 @@ const Quest = ({finishQuestionary, rut, rut_format: rutFormat, question, current
             </HeaderContent>
             <BodyQuestion>
               <TitleQuestion>{question.title}</TitleQuestion>
+              {
+                question.image &&
+                <img src={question.image}></img>
+              }
               <BodyResponses>
                 {question.options.map((option, index) => (
                   <BTNResponse key={`${question.title}-${option}`} onClick={nextQuestion} data-nrequest={index} data-value={option}>{option}</BTNResponse>

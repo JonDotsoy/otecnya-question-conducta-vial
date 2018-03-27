@@ -7,7 +7,7 @@ const sortAscReverse = (a, b) => a.split('').reverse().join('') > b.split('').re
 const sortAlwaysEnd = (opt) => (a, b) => a === opt ? 1 : 0
 
 /**
- * @typedef {{title:string,options:string[],sort?:Function,stag?:string}} Question
+ * @typedef {{title:string,image:string,options:string[],sort?:Function,stag?:string}} Question
  */
 
 /**
